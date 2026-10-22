@@ -1,0 +1,10 @@
+PLUME DES SOINS — VERSION DE TEST AMÉLIORÉE
+
+Ouvrir index.html sur ordinateur ou publier le dossier sur un site HTTPS pour tester sur mobile.
+Le logo cœur de la résidence et la plume sont présents.
+Assistante vocale activée par défaut : tente un message d’accueil au lancement. Selon iPhone/Android, le navigateur peut exiger un premier appui pour permettre la voix.
+Le bouton Assistante vocale permet la désactivation.
+Le bouton Voir un exemple a été remplacé par Proposer une correction légère.
+Les corrections ne changent pas les faits cliniques. Relire et approuver chaque note.
+
+IMPORTANT : VERSION DE TEST UNIQUEMENT AVEC DES DONNÉES FICTIVES. Pas encore validée pour le traitement de données médicales confidentielles. La reconnaissance vocale peut s’appuyer sur un service distant du navigateur. Aucune authentification du personnel ni infrastructure de stockage sécurisé n’est incluse.

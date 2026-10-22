@@ -1,0 +1,18 @@
+{
+  "name": "Plume des soins · Au Cœur de Marie",
+  "short_name": "Plume des soins",
+  "description": "Dictée et préparation de notes de soins – démonstration",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#071529",
+  "theme_color": "#071b32",
+  "icons": [
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
