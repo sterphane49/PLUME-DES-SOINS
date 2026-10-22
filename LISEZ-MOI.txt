@@ -1,0 +1,8 @@
+PLUME DES SOINS — MISE À JOUR
+
+1. Sur GitHub, dans PLUME-DES-SOINS, cliquez Add file > Upload files.
+2. Déposez TOUS les fichiers de ce dossier à la racine, et remplacez les fichiers portant le même nom.
+3. Cliquez Commit changes, puis attendez la publication GitHub Pages.
+4. Sur iPhone, supprimez l’ancienne icône Plume des soins et ajoutez-la à nouveau dans Safari pour mettre à jour l’icône.
+
+IMPORTANT : version de démonstration uniquement, sans données réelles de résidents. Le correcteur intégré ne garantit pas une correction complète; il propose une relecture limitée et le navigateur peut souligner des fautes. La dictée Web peut impliquer un service tiers.
