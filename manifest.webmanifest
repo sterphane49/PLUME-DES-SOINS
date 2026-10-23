@@ -1,13 +1,11 @@
 {
-  "name": "Plume des soins — Au Cœur de Marie",
+  "name": "Plume des soins",
   "short_name": "Plume des soins",
-  "description": "Outil de dictée vocale pour notes de soins (démonstration)",
-  "lang": "fr-CA",
-  "start_url": "./?v=4",
+  "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",
-  "background_color": "#071529",
-  "theme_color": "#071b32",
+  "background_color": "#061427",
+  "theme_color": "#061427",
   "icons": [
     {
       "src": "./icon-192.png",
