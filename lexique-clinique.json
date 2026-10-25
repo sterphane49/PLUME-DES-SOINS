@@ -1,0 +1,418 @@
+{
+  "version": "3.0",
+  "notice": "Lexique d’aide à la reconnaissance, non liste locale d’abréviations autorisées. Ne modifie jamais automatiquement les ordonnances.",
+  "references": [
+    "https://extranetcemtl.cemtl.rtss.qc.ca/fileadmin/intranet/soins-services/dsi/Outils_cliniques/PTI/SLSM/Liste_abreviations_reconnues_utiles.pdf",
+    "https://ismpcanada.ca/fr/bulletin/eviter-utilisation-dangereuse-abreviations/"
+  ],
+  "entries": [
+    {
+      "abbr": "PRN",
+      "meaning": "Au besoin",
+      "category": "Médicaments et administration",
+      "status": "reconnu"
+    },
+    {
+      "abbr": "DIE",
+      "meaning": "Une fois par jour",
+      "category": "Médicaments et administration",
+      "status": "reconnu"
+    },
+    {
+      "abbr": "ID",
+      "meaning": "Ambigu : voie intradermique ou autre usage local",
+      "category": "Médicaments et administration",
+      "status": "ambigu"
+    },
+    {
+      "abbr": "BID",
+      "meaning": "Deux fois par jour",
+      "category": "Médicaments et administration",
+      "status": "reconnu"
+    },
+    {
+      "abbr": "TID",
+      "meaning": "Trois fois par jour",
+      "category": "Médicaments et administration",
+      "status": "reconnu"
+    },
+    {
+      "abbr": "QID",
+      "meaning": "Quatre fois par jour",
+      "category": "Médicaments et administration",
+      "status": "reconnu"
+    },
+    {
+      "abbr": "HS",
+      "meaning": "Au coucher",
+      "category": "Médicaments et administration",
+      "status": "reconnu"
+    },
+    {
+      "abbr": "AC",
+      "meaning": "Avant les repas",
+      "category": "Médicaments et administration",
+      "status": "reconnu"
+    },
+    {
+      "abbr": "PC",
+      "meaning": "Après les repas",
+      "category": "Médicaments et administration",
+      "status": "ambigu"
+    },
+    {
+      "abbr": "PO",
+      "meaning": "Voie orale",
+      "category": "Médicaments et administration",
+      "status": "reconnu"
+    },
+    {
+      "abbr": "SL",
+      "meaning": "Sublingual",
+      "category": "Médicaments et administration",
+      "status": "reconnu"
+    },
+    {
+      "abbr": "SC",
+      "meaning": "Sous-cutané",
+      "category": "Médicaments et administration",
+      "status": "reconnu"
+    },
+    {
+      "abbr": "IM",
+      "meaning": "Intramusculaire (ou insuffisance mitrale selon contexte)",
+      "category": "Médicaments et administration",
+      "status": "ambigu"
+    },
+    {
+      "abbr": "IV",
+      "meaning": "Intraveineux",
+      "category": "Médicaments et administration",
+      "status": "reconnu"
+    },
+    {
+      "abbr": "IR",
+      "meaning": "Intrarectal, selon contexte",
+      "category": "Médicaments et administration",
+      "status": "ambigu"
+    },
+    {
+      "abbr": "co",
+      "meaning": "Comprimé, selon contexte",
+      "category": "Médicaments et administration",
+      "status": "ambigu"
+    },
+    {
+      "abbr": "gtt",
+      "meaning": "Goutte(s)",
+      "category": "Médicaments et administration",
+      "status": "reconnu"
+    },
+    {
+      "abbr": "mg",
+      "meaning": "Milligramme",
+      "category": "Médicaments et administration",
+      "status": "reconnu"
+    },
+    {
+      "abbr": "mcg",
+      "meaning": "Microgramme",
+      "category": "Médicaments et administration",
+      "status": "reconnu"
+    },
+    {
+      "abbr": "mL",
+      "meaning": "Millilitre",
+      "category": "Médicaments et administration",
+      "status": "reconnu"
+    },
+    {
+      "abbr": "mÉq",
+      "meaning": "Milliéquivalent",
+      "category": "Médicaments et administration",
+      "status": "reconnu"
+    },
+    {
+      "abbr": "TA",
+      "meaning": "Tension artérielle",
+      "category": "Signes vitaux et surveillance",
+      "status": "reconnu"
+    },
+    {
+      "abbr": "FC",
+      "meaning": "Fréquence cardiaque",
+      "category": "Signes vitaux et surveillance",
+      "status": "reconnu"
+    },
+    {
+      "abbr": "FR",
+      "meaning": "Fréquence respiratoire",
+      "category": "Signes vitaux et surveillance",
+      "status": "reconnu"
+    },
+    {
+      "abbr": "SpO₂",
+      "meaning": "Saturation périphérique en oxygène",
+      "category": "Signes vitaux et surveillance",
+      "status": "reconnu"
+    },
+    {
+      "abbr": "T°",
+      "meaning": "Température",
+      "category": "Signes vitaux et surveillance",
+      "status": "reconnu"
+    },
+    {
+      "abbr": "P",
+      "meaning": "Pouls selon contexte",
+      "category": "Signes vitaux et surveillance",
+      "status": "ambigu"
+    },
+    {
+      "abbr": "Glyc.",
+      "meaning": "Glycémie selon contexte",
+      "category": "Signes vitaux et surveillance",
+      "status": "ambigu"
+    },
+    {
+      "abbr": "mmHg",
+      "meaning": "Millimètres de mercure",
+      "category": "Signes vitaux et surveillance",
+      "status": "reconnu"
+    },
+    {
+      "abbr": "bpm",
+      "meaning": "Battements par minute",
+      "category": "Signes vitaux et surveillance",
+      "status": "reconnu"
+    },
+    {
+      "abbr": "AA",
+      "meaning": "Air ambiant",
+      "category": "Signes vitaux et surveillance",
+      "status": "reconnu"
+    },
+    {
+      "abbr": "O₂",
+      "meaning": "Oxygène",
+      "category": "Signes vitaux et surveillance",
+      "status": "reconnu"
+    },
+    {
+      "abbr": "ECG",
+      "meaning": "Électrocardiogramme",
+      "category": "Signes vitaux et surveillance",
+      "status": "reconnu"
+    },
+    {
+      "abbr": "AEG",
+      "meaning": "Altération de l’état général",
+      "category": "Observations et milieu",
+      "status": "reconnu"
+    },
+    {
+      "abbr": "BEG",
+      "meaning": "Bon état général",
+      "category": "Observations et milieu",
+      "status": "reconnu"
+    },
+    {
+      "abbr": "DEG",
+      "meaning": "Diminution de l’état général",
+      "category": "Observations et milieu",
+      "status": "reconnu"
+    },
+    {
+      "abbr": "ATCD",
+      "meaning": "Antécédents",
+      "category": "Observations et milieu",
+      "status": "reconnu"
+    },
+    {
+      "abbr": "ATCF",
+      "meaning": "Antécédents familiaux",
+      "category": "Observations et milieu",
+      "status": "reconnu"
+    },
+    {
+      "abbr": "Dx",
+      "meaning": "Diagnostic",
+      "category": "Observations et milieu",
+      "status": "reconnu"
+    },
+    {
+      "abbr": "Sx",
+      "meaning": "Symptômes selon contexte",
+      "category": "Observations et milieu",
+      "status": "ambigu"
+    },
+    {
+      "abbr": "Tx",
+      "meaning": "Traitement selon contexte",
+      "category": "Observations et milieu",
+      "status": "ambigu"
+    },
+    {
+      "abbr": "DRS",
+      "meaning": "Douleur rétrosternale",
+      "category": "Observations et milieu",
+      "status": "reconnu"
+    },
+    {
+      "abbr": "AVC",
+      "meaning": "Accident vasculaire cérébral",
+      "category": "Observations et milieu",
+      "status": "reconnu"
+    },
+    {
+      "abbr": "DTA",
+      "meaning": "Démence de type Alzheimer",
+      "category": "Observations et milieu",
+      "status": "reconnu"
+    },
+    {
+      "abbr": "BMR",
+      "meaning": "Bactérie multirésistante",
+      "category": "Observations et milieu",
+      "status": "reconnu"
+    },
+    {
+      "abbr": "CH",
+      "meaning": "Centre hospitalier",
+      "category": "Observations et milieu",
+      "status": "reconnu"
+    },
+    {
+      "abbr": "CHU",
+      "meaning": "Centre hospitalier universitaire",
+      "category": "Observations et milieu",
+      "status": "reconnu"
+    },
+    {
+      "abbr": "HTA",
+      "meaning": "Hypertension artérielle",
+      "category": "Maladies et conditions",
+      "status": "reconnu"
+    },
+    {
+      "abbr": "FA",
+      "meaning": "Fibrillation auriculaire",
+      "category": "Maladies et conditions",
+      "status": "reconnu"
+    },
+    {
+      "abbr": "IDM",
+      "meaning": "Infarctus du myocarde",
+      "category": "Maladies et conditions",
+      "status": "reconnu"
+    },
+    {
+      "abbr": "EP",
+      "meaning": "Embolie pulmonaire",
+      "category": "Maladies et conditions",
+      "status": "reconnu"
+    },
+    {
+      "abbr": "IRA",
+      "meaning": "Insuffisance rénale aiguë",
+      "category": "Maladies et conditions",
+      "status": "reconnu"
+    },
+    {
+      "abbr": "IRC",
+      "meaning": "Insuffisance rénale chronique",
+      "category": "Maladies et conditions",
+      "status": "reconnu"
+    },
+    {
+      "abbr": "IVRS",
+      "meaning": "Infection des voies respiratoires supérieures",
+      "category": "Maladies et conditions",
+      "status": "reconnu"
+    },
+    {
+      "abbr": "ECA",
+      "meaning": "État confusionnel aigu",
+      "category": "Maladies et conditions",
+      "status": "reconnu"
+    },
+    {
+      "abbr": "ERV",
+      "meaning": "Entérocoque résistant à la vancomycine",
+      "category": "Maladies et conditions",
+      "status": "reconnu"
+    },
+    {
+      "abbr": "HBP",
+      "meaning": "Hypertrophie bénigne de la prostate",
+      "category": "Maladies et conditions",
+      "status": "reconnu"
+    },
+    {
+      "abbr": "GPE",
+      "meaning": "Gastrostomie percutanée endoscopique",
+      "category": "Maladies et conditions",
+      "status": "reconnu"
+    },
+    {
+      "abbr": "GCS",
+      "meaning": "Score de Glasgow",
+      "category": "Maladies et conditions",
+      "status": "reconnu"
+    },
+    {
+      "abbr": "FSC",
+      "meaning": "Formule sanguine complète",
+      "category": "Maladies et conditions",
+      "status": "reconnu"
+    },
+    {
+      "abbr": "QD",
+      "meaning": "Éviter : écrire tous les jours",
+      "category": "À éviter / ambiguïté",
+      "status": "risque"
+    },
+    {
+      "abbr": "QOD",
+      "meaning": "Éviter : écrire tous les deux jours",
+      "category": "À éviter / ambiguïté",
+      "status": "risque"
+    },
+    {
+      "abbr": "U",
+      "meaning": "Éviter : écrire unités",
+      "category": "À éviter / ambiguïté",
+      "status": "risque"
+    },
+    {
+      "abbr": "IU",
+      "meaning": "Éviter : écrire unités internationales",
+      "category": "À éviter / ambiguïté",
+      "status": "risque"
+    },
+    {
+      "abbr": "µg",
+      "meaning": "Éviter : écrire mcg ou microgrammes",
+      "category": "À éviter / ambiguïté",
+      "status": "risque"
+    },
+    {
+      "abbr": "cc",
+      "meaning": "Éviter : écrire mL",
+      "category": "À éviter / ambiguïté",
+      "status": "risque"
+    },
+    {
+      "abbr": "MSO4",
+      "meaning": "Éviter : écrire le nom complet du médicament",
+      "category": "À éviter / ambiguïté",
+      "status": "risque"
+    },
+    {
+      "abbr": "D/C",
+      "meaning": "Éviter : ambigu (congé ou cesser)",
+      "category": "À éviter / ambiguïté",
+      "status": "risque"
+    }
+  ]
+}

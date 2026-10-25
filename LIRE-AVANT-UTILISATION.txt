@@ -1,7 +1,10 @@
-Plume des soins — Mise à jour visuelle et référence OIIAQ
+PLUME DES SOINS — LEXIQUE QUÉBÉCOIS V3
 
-Fichiers à placer à la racine du dépôt GitHub Pages, en remplaçant les fichiers existants.
-La grande plume sur l’accueil est sans encadré carré. Les icônes du téléphone restent des images carrées.
-Référence professionnelle : OIIAQ (infirmières auxiliaires).
+Cette version est un prototype réservé aux essais avec des données fictives.
+Le lexique reconnaît des abréviations écrites, ne garantit pas que le service vocal les transcrive correctement et ne certifie pas l’autorisation locale de les employer.
+Le moteur signale certaines abréviations à risque et leur sens possible, sans interpréter ou modifier une ordonnance.
+Ne pas utiliser avec de vraies données de résidents sur un GitHub Pages public sans évaluation de confidentialité et d’hébergement.
 
-IMPORTANT : Cette application hébergée sur GitHub Pages reste réservée aux essais avec des notes fictives. Ne pas traiter des données cliniques réelles avant validation des mesures de sécurité, de confidentialité, et de la reconnaissance vocale.
+Sources :
+https://extranetcemtl.cemtl.rtss.qc.ca/fileadmin/intranet/soins-services/dsi/Outils_cliniques/PTI/SLSM/Liste_abreviations_reconnues_utiles.pdf
+https://ismpcanada.ca/fr/bulletin/eviter-utilisation-dangereuse-abreviations/
