@@ -304,4 +304,31 @@ $('start')?.addEventListener('click',()=>{const n=read().name; if(n&&'speechSynt
 refresh();
 })();
 </script>
+<style>
+#hava-annotations{margin-top:14px;padding:13px;border:1px solid #2a6681;border-radius:14px;background:#071e34;color:#f1f8ff;line-height:1.85;white-space:pre-wrap;overflow-wrap:anywhere}
+#hava-annotations button{font:inherit;cursor:pointer;border:0;border-radius:5px;padding:0 3px;margin:0 1px;color:#132238}
+#hava-annotations .medical{background:#ffe17b}#hava-annotations .error{background:#ff9b9b;text-decoration:underline;text-decoration-color:#b30020;text-decoration-thickness:2px}
+#hava-explain{margin-top:9px;border:1px solid #44839c;padding:12px;border-radius:12px;background:#0b2b45;color:#fff}
+#hava-explain button{margin:6px 6px 0 0;padding:9px 12px;border-radius:9px;background:#16a8b7;border:0;color:white;font-weight:700}
+</style>
+<script>
+/* Correctif progressif : n'altère pas les fonctions de sauvegarde et d'export existantes. */
+(()=>{'use strict';
+const $=id=>document.getElementById(id),note=$('note'),mic=$('mic');
+if(!note||!mic)return;
+// Sur iPhone, ouvrir toujours la fenêtre de dictée, même si l'identité n'est pas encore remplie.
+mic.onclick=()=>{const dlg=$('dictation-modal'),field=$('dictation-text'),status=$('dictation-status');if(!dlg||!field)return;field.value=note.value;dlg.classList.remove('hidden');status.textContent='Prête à dicter. Si la reconnaissance directe est indisponible, utilisez le micro du clavier.';const isIOS=/iPhone|iPad|iPod/.test(navigator.userAgent);if(isIOS){field.focus();status.textContent='Sur iPhone, touchez le micro du clavier pour dicter. Safari ne permet pas à ce bouton de démarrer la dictée du clavier.';}else{$('dictation-toggle')?.focus();}};
+const panel=document.createElement('section');panel.id='hava-annotations';panel.setAttribute('aria-label','Termes médicaux et erreurs à examiner');
+const info=document.createElement('div');info.id='hava-explain';info.hidden=true;
+const heading=document.createElement('div');heading.style.cssText='font-weight:700;margin-top:12px';heading.textContent='HAVA · Termes et corrections (touchez un mot)';
+const wrap=document.createElement('div');wrap.id='hava-interactive';note.closest('.note-editor')?.after(heading,panel,info);
+const dictionary={PRN:'Au besoin',TA:'Tension artérielle',FC:'Fréquence cardiaque',FR:'Fréquence respiratoire',BID:'Deux fois par jour',TID:'Trois fois par jour',QID:'Quatre fois par jour',SpO2:'Saturation périphérique en oxygène',plaie:'Lésion ou interruption de la continuité de la peau ou d’un tissu',écoulement:'Sortie de liquide ou de sécrétions',rougeur:'Coloration rouge de la peau',ecchymose:'Coloration de la peau liée à un saignement dans les tissus',nausée:'Sensation d’envie de vomir',glycémie:'Concentration de glucose dans le sang',pansement:'Matériel appliqué pour couvrir ou protéger une plaie',pouls:'Battements artériels perceptibles'};
+const typo={ 'plai':'plaie','ecoulemant':'écoulement','écoulemant':'écoulement','nausé':'nausée','ecchimose':'ecchymose','ecchymoze':'ecchymose','poignait':'poignet','poigné':'poignet','tombé':'tombée'};
+const normalize=s=>s.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
+const lookup={};Object.keys(dictionary).forEach(k=>lookup[normalize(k)]=k);
+function show(title,body,correction){info.replaceChildren();info.hidden=false;const t=document.createElement('strong');t.textContent=title;const d=document.createElement('p');d.textContent=body;info.append(t,d);if(correction){const b=document.createElement('button');b.textContent='Remplacer par « '+correction+' »';b.onclick=()=>{const start=Number(info.dataset.start),end=Number(info.dataset.end);note.value=note.value.slice(0,start)+correction+note.value.slice(end);note.dispatchEvent(new Event('input',{bubbles:true}));info.hidden=true;};info.append(b);}const close=document.createElement('button');close.textContent='Fermer';close.onclick=()=>info.hidden=true;info.append(close);}
+function render(){panel.replaceChildren();const raw=note.value;if(!raw.trim()){panel.textContent='Les termes médicaux seront surlignés en jaune et certaines fautes reconnues en rouge.';return;}const rx=/[\p{L}\p{N}₂]+(?:[’'-][\p{L}]+)*/gu;let pos=0,m;while((m=rx.exec(raw))){panel.append(document.createTextNode(raw.slice(pos,m.index)));const word=m[0],start=m.index,end=m.index+word.length,norm=normalize(word),medical=lookup[norm],error=typo[norm];if(medical||error){const b=document.createElement('button');b.type='button';b.className=medical?'medical':'error';b.textContent=word;b.onclick=()=>{info.dataset.start=start;info.dataset.end=end;if(medical)show(word,dictionary[medical]);else show('Mot à vérifier : '+word,'Suggestion de correction orthographique. Vérifiez le contexte avant de l’appliquer.',error);};panel.append(b);}else panel.append(document.createTextNode(word));pos=m.index+word.length;}panel.append(document.createTextNode(raw.slice(pos)));}
+note.addEventListener('input',render);render();
+})();
+</script>
 </body></html>

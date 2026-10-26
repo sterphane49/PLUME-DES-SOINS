@@ -1,4 +1,1 @@
-Plume des soins – correctif affichage iPhone et cache GitHub Pages.
-Téléverser TOUS les fichiers de ce dossier à la racine du dépôt GitHub (index.html, images, lexique-clinique.js et manifest).
-Le dépôt demeure public tant que GitHub affiche Public. Ne pas utiliser de données réelles de résidents.
-Le fonctionnement vocal sur Safari reste limité : le correctif ne garantit pas une dictée native.
+Correctif HAVA : bouton micro ouvrant la fenêtre de dictée sur iPhone, panneau interactif de termes médicaux (jaune) et fautes ciblées (rouge). Sur iPhone Safari, le microphone du clavier demeure nécessaire lorsque la reconnaissance vocale Web est indisponible. Le dictionnaire est une base limitée et non un correcteur grammatical complet. Ne pas utiliser de renseignements cliniques réels avant validation de sécurité et de conformité.
