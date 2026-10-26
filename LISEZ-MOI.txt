@@ -1,1 +1,7 @@
-Correctif HAVA : bouton micro ouvrant la fenêtre de dictée sur iPhone, panneau interactif de termes médicaux (jaune) et fautes ciblées (rouge). Sur iPhone Safari, le microphone du clavier demeure nécessaire lorsque la reconnaissance vocale Web est indisponible. Le dictionnaire est une base limitée et non un correcteur grammatical complet. Ne pas utiliser de renseignements cliniques réels avant validation de sécurité et de conformité.
+PLUME DES SOINS — MISE À JOUR 2026-10-26
+
+Déployer tous les fichiers à la racine du dépôt GitHub relié à Netlify.
+
+Micro : tente la reconnaissance native lorsque disponible, y compris sur iPhone; sinon le microphone du clavier iOS est nécessaire. Aucune garantie de prise en charge de SpeechRecognition sur Safari iOS.
+Lexique : termes cliquables avec définitions, y compris médicaments. Aucun contrôle de prescription ni diagnostic.
+Tester sur appareils réels. Ne pas utiliser de données de patients pour les essais.
