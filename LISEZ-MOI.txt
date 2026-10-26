@@ -1,7 +1,4 @@
-Plume des soins — mise à jour interface et lexique
-
-Accueil : Voix et Paramètres.
-Page de dictée : profil du personnel à gauche, sans les boutons Voix et Paramètres dans l’en-tête.
-Lexique enrichi : les définitions facilitent la rédaction; elles ne sont ni des diagnostics ni des remplacements automatiques.
-Aucune modification automatique des observations cliniques.
-Important : prototype Web, essais fictifs seulement. La reconnaissance vocale, le traitement des données et la sécurité doivent être validés avant des notes réelles.
+Plume des soins – correctif affichage iPhone et cache GitHub Pages.
+Téléverser TOUS les fichiers de ce dossier à la racine du dépôt GitHub (index.html, images, lexique-clinique.js et manifest).
+Le dépôt demeure public tant que GitHub affiche Public. Ne pas utiliser de données réelles de résidents.
+Le fonctionnement vocal sur Safari reste limité : le correctif ne garantit pas une dictée native.
